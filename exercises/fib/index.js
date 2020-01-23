@@ -8,6 +8,13 @@
 // Example:
 //   fib(4) === 3
 
-function fib(n) {}
+function fib(n) {
+  // do a recursion, so that it will keep recurring until it reaches a certain number and stops
+  if(n < 2) {
+    return n
+  }
+  // otherwise, return the fibonacci number
+  return fib(n - 1) + fib(n - 2)
+}
 
 module.exports = fib;
